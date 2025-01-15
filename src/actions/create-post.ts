@@ -68,7 +68,7 @@ export async function createPost(
         title: result.data.title,
         content: result.data.content,
         topicId: topic.id,
-        userId: session.user.id,
+        userId: session.user.id!,
       },
     });
   } catch (error: unknown) {      
